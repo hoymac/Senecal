@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Our Services – Senecal CleanPro Inc.</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: #f7f9fb;
+      color: #333;
+    }
+    nav {
+      background: #0073e6;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+    nav a:hover,
+    nav a[aria-current="page"] {
+      text-decoration: underline;
+      color: #aaddff;
+    }
+    .hero {
+      background: url('https://images.pexels.com/photos/4506031/pexels-photo-4506031.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') center/cover no-repeat;
+      height: 320px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+      margin-bottom: 40px;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.5);
+      z-index: 0;
+    }
+    .hero h1 {
+      position: relative;
+      font-size: 3.5rem;
+      font-weight: 700;
+      z-index: 1;
+      margin: 0;
+    }
+    main {
+      max-width: 1100px;
+      margin: 0 auto 60px;
+      padding: 0 20px;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+      gap: 30px;
+    }
+    .service-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
+      overflow: hidden;
+      text-decoration: none;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      min-height: 360px;
+    }
+    .service-card:hover {
+      box-shadow: 0 10px 25px rgb(0 0 0 / 0.15);
+      transform: translateY(-8px);
+      color: #0073e6;
+    }
+    .service-icon-wrapper {
+      position: relative;
+      height: 160px;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .service-icon {
+      font-size: 70px;
+      color: white;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+      z-index: 1;
+    }
+    .service-overlay {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 115, 230, 0.65);
+      border-radius: 12px 12px 0 0;
+      z-index: 0;
+      transition: background 0.3s ease;
+    }
+    .service-card:hover .service-overlay {
+      background: rgba(0, 115, 230, 0.85);
+    }
+    .service-content {
+      padding: 20px 25px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .service-title {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin: 0 0 12px 0;
+    }
+    .service-desc {
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #555;
+      flex-grow: 1;
+    }
+
+    footer {
+      background: #f1f1f1;
+      text-align: center;
+      padding: 20px 15px;
+      font-size: 0.9em;
+      color: #555;
+      border-top: 1px solid #ddd;
+    }
+    footer a {
+      color: #0073e6;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 480px) {
+      .hero h1 {
+        font-size: 2.5rem;
+        padding: 0 10px;
+      }
+    }
+  </style>
+  <!-- FontAwesome CDN for icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    crossorigin="anonymous"
+  />
+</head>
+<body>
+  <nav>
+    <div><strong>Senecal CleanPro Inc.</strong></div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html" aria-current="page">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="policies.html">Policies</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero">
+    <h1>Our Cleaning Services</h1>
+  </div>
+
+  <main>
+    <div class="services-grid">
+      <a href="sanitation.html" class="service-card" title="Learn more about Sanitation Cleaning">
+        <div class="service-icon-wrapper" style="background-image: url('https://images.pexels.com/photos/416420/pexels-photo-416420.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=250&w=400');">
+          <i class="fa-solid fa-broom service-icon"></i>
+          <div class="service-overlay"></div>
+        </div>
+        <div class="service-content">
+          <h2 class="service-title">Sanitation Cleaning</h2>
+          <p class="service-desc">Professional disinfection and sanitizing to keep your spaces safe and healthy.</p>
+        </div>
+      </a>
+
+      <a href="residential.html" class="service-card" title="Learn more about Residential Cleaning">
+        <div class="service-icon-wrapper" style="background-image: url('https://images.pexels.com/photos/2062432/pexels-photo-2062432.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=250&w=400');">
+          <i class="fa-solid fa-house service-icon"></i>
+          <div class="service-overlay"></div>
+        </div>
+        <div class="service-content">
+          <h2 class="service-title">Residential Cleaning</h2>
+          <p class="service-desc">Keep your home sparkling clean with customized plans tailored to your needs.</p>
+        </div>
+      </a>
+
+      <a href="commercial.html" class="service-card" title="Learn more about Commercial Cleaning">
+        <div class="service-icon-wrapper" style="background-image: url('https://images.pexels.com/photos/287732/pexels-photo-287732.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=250&w=400');">
+          <i class="fa-solid fa-building service-icon"></i>
+          <div class="service-overlay"></div>
+        </div>
+        <div class="service-content">
+          <h2 class="service-title">Commercial Cleaning</h2>
+          <p class="service-desc">Reliable cleaning solutions for offices, stores, and commercial spaces.</p>
+        </div>
+      </a>
+
+      <a href="windows.html" class="service-card" title="Learn more about Window & Glass Cleaning">
+        <div class="service-icon-wrapper" style="background-image: url('https://images.pexels.com/photos/1092671/pexels-photo-1092671.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=250&w=400');">
+          <i class="fa-solid fa-window-maximize service-icon"></i>
+          <div class="service-overlay"></div>
+        </div>
+        <div class="service-content">
+          <h2 class="service-title">Window & Glass Cleaning</h2>
+          <p class="service-desc">Streak-free window and glass cleaning services for a clear view.</p>
+        </div>
+      </a>
+
+      <a href="floors.html" class="service-card" title="Learn more about Floor Cleaning & Maintenance">
+        <div class="service-icon-wrapper" style="background-image: url('https://images.pexels.com/photos/271639/pexels-photo-271639.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=250&w=400');">
+          <i class="fa-solid fa-floor-cleaner service-icon"></i>
+          <div class="service-overlay"></div>
+        </div>
+        <div class="service-content">
+          <h2 class="service-title">Floor Cleaning & Maintenance</h2>
+          <p class="service-desc">Expert care for carpets, hardwood, tile, vinyl, and concrete floors.</p>
+        </div>
+      </a>
+
+      <a href="emergency.html" class="service-card" title="Learn more about Emergency Cleaning">
+        <div class="service-icon-wrapper" style="background-image: url('https://images.pexels.com/photos/3991591/pexels-photo-3991591.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=250&w=400');">
+          <i class="fa-solid fa-truck-medical service-icon"></i>
+          <div class="service-overlay"></div>
+        </div>
+        <div class="service-content">
+          <h2 class="service-title">Emergency Cleaning</h2>
+          <p class="service-desc">Rapid response cleaning for urgent situations and emergencies.</p>
+        </div>
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Senecal CleanPro Inc. | 3-84 RUE LUCIEN-BRAULT, Gatineau, QC J8Z 1P7</p>
+    <p><a href="mailto:patricksenecal@outlook.com">patricksenecal@outlook.com</a></p>
+  </footer>
+</body>
+</html>

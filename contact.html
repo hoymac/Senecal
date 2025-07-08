@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us – Senecal CleanPro Inc.</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: #f7f9fb;
+      color: #333;
+    }
+    nav {
+      background: #0073e6;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+    nav a:hover,
+    nav a[aria-current="page"] {
+      text-decoration: underline;
+      color: #aaddff;
+    }
+    .hero {
+      background: url('https://images.pexels.com/photos/538060/pexels-photo-538060.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') center/cover no-repeat;
+      height: 320px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+      margin-bottom: 40px;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.5);
+      z-index: 0;
+    }
+    .hero h1 {
+      position: relative;
+      font-size: 3.5rem;
+      font-weight: 700;
+      z-index: 1;
+      margin: 0;
+    }
+    main {
+      max-width: 900px;
+      margin: 0 auto 60px;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+    form {
+      background: white;
+      padding: 30px 25px;
+      border-radius: 10px;
+      box-shadow: 0 3px 15px rgb(0 0 0 / 0.1);
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      color: #0073e6;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 10px 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-family: inherit;
+      resize: vertical;
+    }
+    textarea {
+      min-height: 120px;
+    }
+    button {
+      background: #0073e6;
+      color: white;
+      padding: 12px 25px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 700;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background: #005bb5;
+    }
+    .contact-info {
+      background: white;
+      padding: 30px 25px;
+      border-radius: 10px;
+      box-shadow: 0 3px 15px rgb(0 0 0 / 0.1);
+      color: #555;
+      font-size: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .contact-info h2 {
+      color: #0073e6;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+    .contact-info p,
+    .contact-info a {
+      margin: 8px 0;
+      color: #555;
+      text-decoration: none;
+    }
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+    .business-hours {
+      margin-top: 20px;
+    }
+    .business-hours strong {
+      display: block;
+      margin-bottom: 8px;
+      color: #0073e6;
+    }
+    iframe {
+      border: 0;
+      border-radius: 10px;
+      width: 100%;
+      height: 220px;
+      margin-top: 20px;
+    }
+    .social-media {
+      margin-top: 30px;
+    }
+    .social-media a {
+      margin-right: 15px;
+      font-size: 1.5rem;
+      color: #0073e6;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .social-media a:hover {
+      color: #005bb5;
+    }
+    footer {
+      background: #f1f1f1;
+      text-align: center;
+      padding: 20px 15px;
+      font-size: 0.9em;
+      color: #555;
+      border-top: 1px solid #ddd;
+      margin-top: 40px;
+    }
+    footer a {
+      color: #0073e6;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 850px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+    }
+    @media (max-width: 480px) {
+      .hero h1 {
+        font-size: 2.5rem;
+        padding: 0 10px;
+      }
+    }
+  </style>
+  <!-- FontAwesome CDN for social icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    crossorigin="anonymous"
+  />
+</head>
+<body>
+  <nav>
+    <div><strong>Senecal CleanPro Inc.</strong></div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" aria-current="page">Contact</a></li>
+      <li><a href="policies.html">Policies</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero">
+    <h1>Contact Senecal CleanPro Inc.</h1>
+  </div>
+
+  <main>
+    <form action="mailto:patricksenecal@outlook.com" method="post" enctype="text/plain">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Your email address" required />
+
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" name="phone" placeholder="Your phone number" />
+
+      <label for="service">Service Interested</label>
+      <select id="service" name="service" required>
+        <option value="" disabled selected>Select a service</option>
+        <option value="sanitation">Sanitation Cleaning</option>
+        <option value="residential">Residential Cleaning</option>
+        <option value="commercial">Commercial Cleaning</option>
+        <option value="windows">Window & Glass Cleaning</option>
+        <option value="floors">Floor Cleaning & Maintenance</option>
+        <option value="emergency">Emergency Cleaning</option>
+      </select>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <section class="contact-info">
+      <h2>Contact Information</h2>
+      <p><strong>Address:</strong> 3-84 RUE LUCIEN-BRAULT, Gatineau, QC J8Z 1P7</p>
+      <p><strong>Phone:</strong> <a href="tel:+18198730001">819-873-0001</a></p>
+      <p><strong>Email:</strong> <a href="mailto:patricksenecal@outlook.com">patricksenecal@outlook.com</a></p>
+
+      <div class="business-hours">
+        <strong>Business Hours:</strong>
+        <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
+        <p>Saturday: 9:00 AM - 4:00 PM</p>
+        <p>Sunday: Closed</p>
+      </div>
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.059842198124!2d-75.75844038444174!3d45.44276467910008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05e8e9a2a5a1%3A0x6937a34781d74c87!2s3-84%20Rue%20Lucien-Brault%2C%20Gatineau%2C%20QC%20J8Z%201P7%2C%20Canada!5e0!3m2!1sen!2sus!4v1688888888888!5m2!1sen!2sus"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+
+      <div class="social-media">
+        <a href="https://facebook.com/yourpage" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="https://instagram.com/yourpage" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Senecal CleanPro Inc. | 3-84 RUE LUCIEN-BRAULT, Gatineau, QC J8Z 1P7</p>
+    <p><a href="mailto:patricksenecal@outlook.com">patricksenecal@outlook.com</a></p>
+  </footer>
+</body>
+</html>

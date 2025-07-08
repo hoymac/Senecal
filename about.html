@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us – Senecal CleanPro Inc.</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: #f7f9fb;
+      color: #333;
+    }
+    nav {
+      background: #0073e6;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+    nav a:hover,
+    nav a[aria-current="page"] {
+      text-decoration: underline;
+      color: #aaddff;
+    }
+    .hero {
+      background: url('https://images.pexels.com/photos/374746/pexels-photo-374746.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') center/cover no-repeat;
+      height: 320px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+      margin-bottom: 40px;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.5);
+      z-index: 0;
+    }
+    .hero h1 {
+      position: relative;
+      font-size: 3.5rem;
+      font-weight: 700;
+      z-index: 1;
+      margin: 0;
+    }
+    main {
+      max-width: 900px;
+      margin: 0 auto 60px;
+      padding: 0 20px;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+    main h2 {
+      color: #0073e6;
+      font-weight: 700;
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+    main p {
+      margin-bottom: 20px;
+      color: #444;
+    }
+    footer {
+      background: #f1f1f1;
+      text-align: center;
+      padding: 20px 15px;
+      font-size: 0.9em;
+      color: #555;
+      border-top: 1px solid #ddd;
+    }
+    footer a {
+      color: #0073e6;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 480px) {
+      .hero h1 {
+        font-size: 2.5rem;
+        padding: 0 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div><strong>Senecal CleanPro Inc.</strong></div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html" aria-current="page">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="policies.html">Policies</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero">
+    <h1>About Senecal CleanPro Inc.</h1>
+  </div>
+
+  <main>
+    <h2>Our Story</h2>
+    <p>Senecal CleanPro Inc. has been proudly serving Gatineau and the surrounding areas with top-quality cleaning services. Founded with a commitment to excellence, we specialize in commercial, residential, and sanitation cleaning, ensuring every space we touch is spotless and healthy.</p>
+    
+    <h2>Our Mission</h2>
+    <p>Our mission is to provide reliable, thorough, and environmentally responsible cleaning solutions. We prioritize customer satisfaction and safety, using the latest cleaning techniques and eco-friendly products to protect our clients and the environment.</p>
+    
+    <h2>Our Team</h2>
+    <p>Our team is composed of highly trained, professional cleaners dedicated to delivering outstanding service every time. We continuously invest in training and technology to maintain our position as a trusted leader in the cleaning industry.</p>
+    
+    <h2>Why Choose Us?</h2>
+    <ul>
+      <li>Experienced and friendly staff</li>
+      <li>Customized cleaning plans</li>
+      <li>Use of eco-friendly products</li>
+      <li>Competitive pricing with excellent value</li>
+      <li>Flexible scheduling to fit your needs</li>
+    </ul>
+  </main>
+
+  <footer>
+    <p>© 2025 Senecal CleanPro Inc. | 3-84 RUE LUCIEN-BRAULT, Gatineau, QC J8Z 1P7</p>
+    <p><a href="mailto:patricksenecal@outlook.com">patricksenecal@outlook.com</a></p>
+  </footer>
+</body>
+</html>
